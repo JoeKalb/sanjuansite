@@ -1,0 +1,26 @@
+html, body{
+	height: 100%;
+}
+
+.background{
+	background-image: url("images/mission-San-Juan-Capistrano.jpg");
+	height: 100%;
+}
+
+.well{
+	opacity: 0.85;
+}
+
+footer{
+	position: absolute;
+	background: #3e3f3a;
+	width: 100%;
+	bottom: 0;
+	color: white;
+	text-align: center;
+	vertical-align: center;
+}
+
+#paymentLabel{
+	text-align: right;
+}
