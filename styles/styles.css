@@ -1,10 +1,14 @@
 html, body{
 	height: 100%;
+	background-color: #3e3f3a;
 }
 
 .background{
 	background-image: url("images/mission-San-Juan-Capistrano.jpg");
 	height: 100%;
+	width: 100%;
+	background-repeat: repeat-x;
+
 }
 
 .well{
@@ -18,9 +22,5 @@ footer{
 	bottom: 0;
 	color: white;
 	text-align: center;
-	vertical-align: center;
-}
-
-#paymentLabel{
-	text-align: right;
+	border-top: 10px;
 }

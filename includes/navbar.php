@@ -14,7 +14,7 @@
         <li><a href="<?php echo ROOT_URL; ?>">HOME</a></li>
         <li><a href="<?php echo ROOT_URL; ?>about.php">ABOUT</a></li>
         <li><a href="<?php echo ROOT_URL; ?>contacts.php">CONTACTS</a></li>
-        <li id="paymentLabel"><a href="<?php echo ROOT_URL; ?>payments.php">Make Payments</a></li>
+        <li><a href="<?php echo ROOT_URL; ?>payments.php">Make Payment</a></li>
       </ul>
     </div>
   </div>

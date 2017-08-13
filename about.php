@@ -2,7 +2,7 @@
 <?php include('includes/header.php'); ?>
 <div class="container">
 	<div class="well">
-		<h2>ABOUT</h2>
+		<h2>About</h2>
 		<p>This will probably hold details about the different appartments and maybe if any are places for rent currently</p>
 	</div>
 </div>

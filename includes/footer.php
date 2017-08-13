@@ -1,7 +1,9 @@
 
 <footer>
 	<div class="container">
+		<br>
 		<p>This is the footer</p>
+		<p>&copy 2017 </p>
 	</div>
 </footer>
 </div>
