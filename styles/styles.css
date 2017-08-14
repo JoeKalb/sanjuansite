@@ -8,19 +8,52 @@ html, body{
 	height: 100%;
 	width: 100%;
 	background-repeat: repeat-x;
+}
 
+.jumbotron{
+	opacity: 0.9;
 }
 
 .well{
-	opacity: 0.85;
+	opacity: 0.9;
+}
+
+.navbar{
+
+}
+
+.row{
+	background-color: white;
+	opacity: 0.9;
 }
 
 footer{
-	position: absolute;
+	display: block;
 	background: #3e3f3a;
 	width: 100%;
-	bottom: 0;
+	bottom: 1rem;
 	color: white;
 	text-align: center;
-	border-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	z-index: 1;
+}
+
+#phoneNumberInputs{
+	display: -webkit-flex;
+	display: flex;
+}
+
+#phoneNumberInputs input{
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 20%;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+}
+
+#phoneNumberInputs p{
+	margin: 4px 3px 0px 3px;
 }
