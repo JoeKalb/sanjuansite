@@ -3,6 +3,12 @@ html, body{
 	background-color: #3e3f3a;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
 .background{
 	background-image: url("images/mission-San-Juan-Capistrano.jpg");
 	height: 100%;

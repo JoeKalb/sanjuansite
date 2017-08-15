@@ -11,6 +11,6 @@
 		<h4>Rotating</h4>
 		<h5>Images</h5>
 	</div>
-	
 </div>
+<?php include('includes/quicklinks.php') ?>
 <?php include('includes/footer.php'); ?>
