@@ -1,6 +1,6 @@
 <?php require('config/config.php'); ?>
 <?php 
-	if(isset($_POST['areaCode'])){
+	if(isset($_POST['areaCode']) && isset($_POST['input2']) && isset($_POST['input3'])){
 		$areaCode = htmlentities($_POST['areaCode']);
 		$input2 = htmlentities($_POST['input2']);
 		$input3 = htmlentities($_POST['input3']);
@@ -15,12 +15,12 @@
 		<form method="post" action="payments.php">
 			<div id="phoneNumberInputs">
 				<p>+1</p>
-				<input name="areaCode" class="inputs" type="number" placeholder="(949)" maxlength="3" onkeydown="limitText(this, 3);" onkeyup="limitText(this, 3)" id="areaCode">
-				<input name="input2" class="inputs" type="number" placeholder="555" maxlength="3" onkeydown="limitText(this, 3);" onkeyup="limitText(this, 3)" id="input2">
-				<input name="input3" class="inputs" type="number" placeholder="5555" maxlength="4" onkeydown="limitText(this, 4);" onkeyup="limitText(this, 4)" id="input3">
+				<input name="areaCode" class="inputs" type="number" placeholder="(949)" maxlength="3" onkeydown="limitText(this, 3);" onkeyup="limitText(this, 3)" id="areaCode" pattern="[0-9]">
+				<input name="input2" class="inputs" type="number" placeholder="555" maxlength="3" onkeydown="limitText(this, 3);" onkeyup="limitText(this, 3)" id="input2" pattern="[0-9]">
+				<input name="input3" class="inputs" type="number" placeholder="5555" maxlength="4" onkeydown="limitText(this, 4);" onkeyup="limitText(this, 4)" id="input3" pattern="[0-9]">
 			</div>
 			<br>
-			<button type="submit" class="btn btn-success btn-block" disabled id="submit">Submit</button>
+			<button type="submit" class="btn btn-success btn-block" disabled="true" id="submit">Submit</button>
 		</form>
 	</div>
 </div>
@@ -68,6 +68,27 @@
 	});
 
 	document.getElementById("input3").addEventListener("keyup", function() {
+		if (this.value.length == this.maxLength) {
+			input3 = true;
+			changeDisable();
+		}
+	});
+
+	document.getElementById("areaCode").addEventListener("touchend", function() {
+		if (this.value.length == this.maxLength) {
+			areaCode = true;
+			changeDisable();
+		}
+	});
+
+	document.getElementById("input2").addEventListener("touchend", function() {
+		if (this.value.length == this.maxLength) {
+			input2 = true;
+			changeDisable();
+		}
+	});
+
+	document.getElementById("input3").addEventListener("touchend", function() {
 		if (this.value.length == this.maxLength) {
 			input3 = true;
 			changeDisable();
