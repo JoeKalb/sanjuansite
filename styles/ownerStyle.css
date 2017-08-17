@@ -4,19 +4,20 @@ input[type="number"]::-webkit-inner-spin-button {
 	margin: 0;
 }
 
-.wrapper{
-	display: flex;
-	height: 100%;
+body{
+	padding-top: 5px;
+}
+h1 a{
+	float: right;
+	margin-right: 2px;
 }
 
 .column{
-	width: 100%;
-	flex-grow: 1;
-	margin: auto;
+	border: solid;
 }
-
-@media only screen and (max-width: 300px) {
-	.column{
-		width: 33%;
-	}
+.column h2{
+	text-align: center;
+}
+.column h2 a{
+	float: right;
 }
