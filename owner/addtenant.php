@@ -17,6 +17,8 @@
 					<label class="label">Last Name</label>
 					<input type="number" class="input" Placeholder="Doe">
 				</div>
+			</div>
+			<div class="columns">
 				<div class="column">
 					<label class="label">Area Code</label>
 					<input type="number" pattern=".[0-9]" class="input" placeholder="555">

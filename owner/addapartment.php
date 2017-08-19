@@ -10,19 +10,19 @@
 			<div class="columns" >
 				<div class="column">
 					<label class="label">Street Number</label>
-					<input type="number">
+					<input class="input" type="number">
 				</div>
 				<div class="column">
 					<label class="label">Street Name</label>
-					<input type="text">
+					<input class="input" type="text">
 				</div>
 				<div class="column">
 					<label class="label">City</label>
-					<input type="text">
+					<input class="input" type="text">
 				</div>
 				<div class="column">
 					<label class="label">Zip Code</label>
-					<input type="text">
+					<input class="input" type="text">
 				</div>
 			</div>
 			<input type="submit" name="submit" value="Submit" class="button is-large is-success" >
